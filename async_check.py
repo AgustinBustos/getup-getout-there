@@ -5,7 +5,9 @@ import pandas as pd
 
 proxy_list=pd.read_csv('proxies.csv')['ip'].tolist()
 
-
+url = "https://www.despegar.com.ar/shop/flights/results/roundtrip/BUE/MIA/2025-06-06/2025-06-22/4/0/0?from=SB&di=4"
+# url ='https://www.google.com/'
+# url='http://ipinfo.io/json'
 
 async def fetch(s, url, proxy):
     try:
@@ -33,8 +35,7 @@ async def fetch_all(s, url, proxies):
 
 
 async def main():
-    url = "https://www.despegar.com.ar/shop/flights/results/roundtrip/BUE/MIA/2025-06-06/2025-06-22/4/0/0?from=SB&di=4"
-
+    
     proxies = ['http://'+i for i in proxy_list]
 
     async with aiohttp.ClientSession() as session:

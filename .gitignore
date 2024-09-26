@@ -2,3 +2,5 @@ proxies.csv
 venv
 __pycache__
 C:\Users\Administrator\AppData\Local\Google\Chrome\User Data
+gathered.csv
+config.py

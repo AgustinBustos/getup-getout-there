@@ -3,7 +3,7 @@ from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnecti
 from config import busername2, bpassword2
 import pandas as pd
 SBR_WEBDRIVER = f'https://{busername2}:{bpassword2}@brd.superproxy.io:9515'
-url="https://www.despegar.com.ar/shop/flights/results/roundtrip/BUE/MIA/2025-06-06/2025-06-22/4/0/0"# ?from=SB&di=4'https://geo.brdtest.com/welcome.txt'
+url="https://www.despegar.com.ar/shop/flights/results/roundtrip/BUE/MIA/2025-06-06/2025-06-22/4/0/0?from=SB&di=4"# ?from=SB&di=4'https://geo.brdtest.com/welcome.txt'
 
 
 
